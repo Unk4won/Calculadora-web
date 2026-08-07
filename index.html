@@ -35,20 +35,23 @@
       </section>
 
       <!--Calculator section-->
-      <section>
+      <section class="calculator">
         <!-- Output screen -->
-        <div>
+        <div class="calculator__output">
           <input
             type="text"
-            name="output"
             id="output"
-            placeholder="0"
+            aria-label="calculator display"
+            class="calculator__display"
+            value="0"
             readonly
           />
         </div>
 
+        <!--Grid Buttons-->
+        <div class="calculator__grid">
         <!-- Numbers -->
-        <div>
+        <div class="calculator__numbers">
           <button type="button">0</button>
           <button type="button">1</button>
           <button type="button">2</button>
@@ -62,7 +65,7 @@
         </div>
 
         <!-- Operators -->
-        <div>
+        <div class="calculator__operators">
           <button type="button">+</button>
           <button type="button">-</button>
           <button type="button">/</button>
@@ -71,7 +74,7 @@
           <button type="button">=</button>
           <button type="button">DEL</button>
         </div>
-      </section>
+      </div>
     </main>
 
     <!--Author - Copyright -->

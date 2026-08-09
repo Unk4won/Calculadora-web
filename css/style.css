@@ -15,7 +15,7 @@
   --font-primary: "Bebas Neue", sans-serif; /*Para titulos*/
   --font-secondary: "Montserrat", sans-serif; /*Para el texto body*/
 
-  /*Weights*/
+  /*WEIGHTS*/
   --fw-light: 300;
   --fw-regular: 400;
   --fw-medium: 500;
@@ -68,9 +68,15 @@ body {
   font-weight: var(--fw-regular);
   line-height: var(--leading-normal);
   font-size: var(--text-base);
-
   background-color: var(--clr-background);
   color: var(--clr-text-primary);
+
+  min-height: 100vh;
+  padding: var(--sp-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 a {
@@ -88,3 +94,5 @@ h3,
 h4 {
   font-family: var(--font-primary);
 }
+
+/*COMPONENTS*/

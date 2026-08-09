@@ -47,6 +47,7 @@
 
       <!--Calculator section-->
       <section class="calculator">
+        <h2 class="feature-section__subtitle">Realiza Operaciones</h2>
         <!-- Output screen -->
         <div class="calculator__output">
           <input
@@ -59,23 +60,15 @@
           />
         </div>
 
-        <!-- Grid Buttons: SOLO botones directos, sin divs -->
         <div class="calculator__grid">
           <!-- Controles -->
-          <button
-            type="button"
-            class="calculator__btn calculator__btn--control"
-          >
-            C
-          </button>
-          <button
-            type="button"
-            class="calculator__btn calculator__btn--control"
-          >
+          <button type="button" class="calculator__btn calculator__btn--del">
             DEL
           </button>
+          <button type="button" class="calculator__btn calculator__btn--c">
+            C
+          </button>
 
-          <!-- Números: 0-9 (sin div contenedor) -->
           <button type="button" class="calculator__btn" data-number="7">
             7
           </button>
@@ -128,11 +121,11 @@
           </button>
 
           <!-- Última fila -->
-          <button type="button" class="calculator__btn" data-number="0">
-            0
-          </button>
           <button type="button" class="calculator__btn" data-number=".">
             .
+          </button>
+          <button type="button" class="calculator__btn" data-number="0">
+            0
           </button>
           <button
             type="button"

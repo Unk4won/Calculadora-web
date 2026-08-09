@@ -157,7 +157,10 @@ h4 {
   align-items: center;
   gap: var(--sp-lg);
   width: 100%;
-  background-color: red;
+  min-height: 400px;
+  padding: var(--sp-md) var(--sp-sm);
+  border-radius: var(--radius-md);
+  background-color: var(--clr-surface-dark);
 }
 
 .calculator__output {
@@ -194,11 +197,12 @@ h4 {
 
 .calculator__btn {
   height: 66px;
-  background-color: var(--clr-surface-dark);
-  color: var(--clr-text-primary);
+  background-color: var(--clr-accent);
+  color: var(--clr-surface-dark);
   border-radius: var(--radius-md);
   font-family: var(--font-secondary);
   font-size: var(--text-lg);
+  font-weight: var(--fw-bold);
 }
 
 .footer {

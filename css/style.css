@@ -1,0 +1,90 @@
+/*IMPORTS*/
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*VARIABLES*/
+:root {
+  /*COLOR PALLET (dark mode + green/peach)*/
+  --clr-background: #000000; /* Black: Fondo principal */
+  --clr-surface-dark: #121212; /**/
+  --clr-surface: #0a3821; /* Deep Green: Fondo de las tarjetas/botones */
+  --clr-text-primary: #fff2e1; /* Peach: Textos principales */
+  --clr-accent: #6af559; /* Green vibrante: Detalles y acentos */
+  --clr-accent-hover: #4dd83d; /* Green para el hover */
+
+  /*TYPOGRAPHY*/
+  --font-primary: "Bebas Neue", sans-serif; /*Para titulos*/
+  --font-secondary: "Montserrat", sans-serif; /*Para el texto body*/
+
+  /*Weights*/
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-black: 900;
+
+  /*line-Heights*/
+  --leading-none: 1; /* Para títulos muy grandes */
+  --leading-tight: 1.2; /* Para títulos estándar */
+  --leading-snug: 1.375; /* Para subtítulos */
+  --leading-normal: 1.5; /* Para párrafos legibles (estándar web) */
+  --leading-loose: 2; /* Para textos que necesitan mucho aire */
+
+  /*SPACING AND SIZES (1rem = 16px)*/
+  --sp-sm: 0.5rem; /* 8px */
+  --sp-md: 1rem; /* 16px */
+  --sp-lg: 1.5rem; /* 24px */
+  --sp-xl: 2rem; /* 32px */
+
+  --text-xs: 0.75rem; /* 12px - Notas al pie, tooltips, legales */
+  --text-sm: 0.875rem; /* 14px - Etiquetas, metadata, botones pequeños */
+  --text-base: 1rem; /* 16px - Cuerpo de texto principal, párrafos estándar */
+  --text-lg: 1.125rem; /* 18px - Textos destacados, subtítulos (h4, h5) */
+  --text-xl: 1.25rem; /* 20px - Títulos de tarjetas, secciones pequeñas (h3) */
+  --text-2xl: 1.5rem; /* 24px - Títulos de sección estándar (h2) */
+  --text-3xl: 2rem; /* 32px - Títulos principales de páginas (h1) */
+  --text-4xl: 2.5rem; /* 40px - Títulos tipo Hero / Banners grandes */
+  --text-5xl: 3rem; /* 48px - Textos de impacto gigante */
+
+  /*BORDERS AND SHADOWS*/
+  --radius-md: 0.75rem;
+  --radius-round: 50%;
+  --shadow-card: 0 4px 12px rgba(106, 245, 89, 0.1);
+}
+
+/*RESETS*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*BASE*/
+
+body {
+  font-family: var(--font-secondary);
+  font-weight: var(--fw-regular);
+  line-height: var(--leading-normal);
+  font-size: var(--text-base);
+
+  background-color: var(--clr-background);
+  color: var(--clr-text-primary);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-primary);
+}

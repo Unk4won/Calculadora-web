@@ -187,14 +187,6 @@ h4 {
   gap: 10px;
 }
 
-.calculator__btn--del {
-  grid-column: span 3;
-}
-
-.calculator__btn--c {
-  grid-column: span 1;
-}
-
 .calculator__btn {
   height: 66px;
   background-color: var(--clr-accent);
@@ -203,6 +195,23 @@ h4 {
   font-family: var(--font-secondary);
   font-size: var(--text-lg);
   font-weight: var(--fw-bold);
+}
+
+.calculator__btn--del {
+  grid-column: span 3;
+  background-color: deepskyblue;
+  color: var(--clr-text-primary);
+}
+
+.calculator__btn--c {
+  grid-column: span 1;
+  background-color: crimson;
+  color: var(--clr-text-primary);
+}
+
+.calculator__btn--operator {
+  background-color: orange;
+  color: var(--clr-text-primary);
 }
 
 .footer {

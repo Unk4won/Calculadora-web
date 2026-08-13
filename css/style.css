@@ -196,7 +196,7 @@ h4 {
   font-family: var(--font-secondary);
   font-size: var(--text-lg);
   font-weight: var(--fw-bold);
-  transition: all 0.1s linear;
+  transition: all 0.2s linear;
 }
 
 .calculator__btn:focus {

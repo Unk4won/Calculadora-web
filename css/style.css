@@ -196,12 +196,13 @@ h4 {
   font-family: var(--font-secondary);
   font-size: var(--text-lg);
   font-weight: var(--fw-bold);
-  transition: all 0.2s linear;
+  transition: all 1.2s linear;
 }
 
-.calculator__btn:focus {
+.calculator__btn:active {
   background-color: var(--clr-surface);
   color: var(--clr-text-primary);
+  transition: all 0s;
 }
 .calculator__btn--del {
   grid-column: span 3;
@@ -209,8 +210,9 @@ h4 {
   color: var(--clr-text-primary);
 }
 
-.calculator__btn--del:focus {
+.calculator__btn--del:active {
   background-color: darkcyan;
+  transition: all 0s;
 }
 
 .calculator__btn--c {
@@ -219,8 +221,9 @@ h4 {
   color: var(--clr-text-primary);
 }
 
-.calculator__btn--c:focus {
+.calculator__btn--c:active {
   background-color: darkred;
+  transition: all 0s;
 }
 
 .calculator__btn--operator {
@@ -228,17 +231,19 @@ h4 {
   color: var(--clr-text-primary);
 }
 
-.calculator__btn--operator:focus {
+.calculator__btn--operator:active {
   background-color: orangered;
   color: var(--clr-text-primary);
+  transition: all 0s;
 }
 
 .calculator__btn--equals {
   background-color: lightcoral;
 }
 
-.calculator__btn--equals:focus {
+.calculator__btn--equals:active {
   background-color: indianred;
+  transition: all 0s;
 }
 
 footer {

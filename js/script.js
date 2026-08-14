@@ -11,4 +11,12 @@ let operacion = undefined;
 
 // FUNCIONES
 
+const agregarNumero = (numero) => {
+  if (numero === "." && operandoActual.includes(".")) {
+    return;
+  }
+  operandoActual += numero;
+};
+
+const agregarPantalla = () => (display.value = operandoActual);
 // EVENT LISTENERS - INTERACCIONES

@@ -1,6 +1,8 @@
 // VARIABLES DOM
 const display = document.querySelector("#output");
 const btnEquals = document.querySelector("#equals");
+const btnClear = document.querySelector("#clear");
+const btnDelete = document.querySelector("#delete");
 const btnOperators = document.querySelectorAll("[data-operator]");
 const btnNumbers = document.querySelectorAll("[data-number]");
 
@@ -27,6 +29,12 @@ const elegirOperacion = (operador) => {
   operandoActual = "";
 };
 
+const limpiar = () => {
+  operandoActual = "0";
+  operandoAnterior = "";
+  operacion = undefined;
+};
+
 // EVENT LISTENERS - INTERACCIONES
 
 btnNumbers.forEach((btn) => {
@@ -46,3 +54,13 @@ btnOperators.forEach((btn) => {
     agregarPantalla();
   });
 });
+
+btnClear.addEventListener("click", () => {
+  limpiar();
+  agregarPantalla();
+});
+
+/*
+RESOLVER A FUTURO:
+1. Error logico - visual al presionar el operador borra el display y el user no tiene forma de ver que presiono
+*/

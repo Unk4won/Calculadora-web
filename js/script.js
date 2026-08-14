@@ -19,4 +19,30 @@ const agregarNumero = (numero) => {
 };
 
 const agregarPantalla = () => (display.value = operandoActual);
+
+const elegirOperacion = (operador) => {
+  if (!operandoActual) return;
+  operandoAnterior = operandoActual;
+  operacion = operador;
+  operandoActual = "";
+};
+
 // EVENT LISTENERS - INTERACCIONES
+
+btnNumbers.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const numeroPresionado = btn.dataset.number;
+
+    agregarNumero(numeroPresionado);
+    agregarPantalla();
+  });
+});
+
+btnOperators.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const operadorPresionado = btn.dataset.operator;
+
+    agregarNumero(operadorPresionado);
+    agregarPantalla();
+  });
+});

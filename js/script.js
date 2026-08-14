@@ -42,7 +42,7 @@ btnOperators.forEach((btn) => {
   btn.addEventListener("click", () => {
     const operadorPresionado = btn.dataset.operator;
 
-    agregarNumero(operadorPresionado);
+    elegirOperacion(operadorPresionado);
     agregarPantalla();
   });
 });

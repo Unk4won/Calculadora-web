@@ -20,10 +20,19 @@ const agregarNumero = (numero) => {
   operandoActual += numero;
 };
 
-const agregarPantalla = () => (display.value = operandoActual);
+const agregarPantalla = () => {
+  if (operacion) {
+    display.value = `${operandoAnterior} ${operacion} ${operandoActual}`;
+  } else {
+    display.value = operandoActual;
+  }
+};
 
 const elegirOperacion = (operador) => {
   if (!operandoActual) return;
+  if (operandoAnterior !== false) {
+    calcular();
+  }
   operandoAnterior = operandoActual;
   operacion = operador;
   operandoActual = "";

@@ -35,6 +35,42 @@ const limpiar = () => {
   operacion = undefined;
 };
 
+const parseNumbers = () => {
+  const numAnterior = parseFloat(operandoAnterior);
+  const numActual = parseFloat(operandoActual);
+  return [numActual, numAnterior];
+};
+
+const calcular = () => {
+  const [actual, anterior] = parseNumbers();
+  let resultado = undefined;
+
+  switch (operacion) {
+    case "+":
+      resultado = anterior + actual;
+      break;
+
+    case "-":
+      resultado = anterior - actual;
+      break;
+
+    case "/":
+      resultado = anterior / actual;
+      break;
+
+    case "*":
+      resultado = anterior * actual;
+      break;
+
+    default:
+      return;
+  }
+
+  operandoActual = resultado.toString();
+  operandoAnterior = "";
+  operacion = undefined;
+};
+
 // EVENT LISTENERS - INTERACCIONES
 
 btnNumbers.forEach((btn) => {
@@ -57,6 +93,11 @@ btnOperators.forEach((btn) => {
 
 btnClear.addEventListener("click", () => {
   limpiar();
+  agregarPantalla();
+});
+
+btnEquals.addEventListener("click", () => {
+  calcular();
   agregarPantalla();
 });
 
